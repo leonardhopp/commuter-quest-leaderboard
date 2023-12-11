@@ -1,0 +1,41 @@
+@font-face {
+      font-family: 'Pixel';
+      src: url('./assets/font.woff2') format('woff2'),
+      url('./assets/font.TTF') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+body{
+    margin: 0;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    font-family: "Pixel", "VT323", sans-serif;
+}
+
+#header-container {
+    width: 100%;
+}
+
+#leaderboard-container {
+    width: 100%; /* Adjust this as needed */
+}
+
+#header {
+    text-align: center;
+    width: 50%;
+    margin: 20px auto 20px;
+}
+
+#leaderboard {
+    width: 50%; /* Set the width of the table */
+    margin: auto; /* Centers the table within its container */
+}
+
+#leaderboard th, #leaderboard td {
+    text-align: left;
+    padding: 8px;
+}
+
