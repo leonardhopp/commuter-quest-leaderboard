@@ -17,7 +17,7 @@ module.exports = {
     static: path.join(__dirname, 'dist'), // or wherever your files are
     compress: true,
     port: 9000, // you can specify your port
-},
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html' // Path to your template file
@@ -26,10 +26,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/, // RegEx to match files ending with .css
-        use: ['style-loader', 'css-loader'] // Use these loaders
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
       },
-      // ... other rules
+      {
+        test: /\.(svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource'
+      }
     ]
   },
 };
