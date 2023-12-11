@@ -1,7 +1,7 @@
 @font-face {
-      font-family: 'Pixel';
-      src: url('./assets/font.woff2') format('woff2'),
-      url('./assets/font.TTF') format('truetype');
+    font-family: 'Pixel';
+    src: url('./assets/font.woff2') format('woff2'),
+    url('./assets/font.TTF') format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
